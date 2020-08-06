@@ -6,12 +6,15 @@ public class H1002 {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         int T=scan.nextInt(),kase=0;
-        scan.nextLine();   //read "Enter"
+        // scan.nextLine();   //read "Enter"
         while(kase++<T){
-            String str=scan.nextLine();
-            String[]arr=str.split(" ");
-            System.out.println("Case "+kase+" :\n"+arr[0]+" + "+arr[1]+" = "+add(arr[0],arr[1]));
-            if(kase<T) System.out.println();
+            // String str=scan.nextLine();
+            // String[]arr=str.split(" ");
+            String str1=scan.next(),str2=scan.next();
+            // System.out.println("Case "+kase+":\n"+arr[0]+" + "+arr[1]+" = "+add(arr[0],arr[1]));
+            System.out.println("Case "+kase+":");   //!!! "\n" Presentation Error!
+            System.out.println(str1+" + "+str2+" = "+add(str1,str2));
+            if(kase<T) System.out.println("");
         }
         scan.close();
     }
